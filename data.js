@@ -476,6 +476,36 @@ var APP_DATA = {
           "pitch": 0.07845779989464496,
           "rotation": 0,
           "target": "14-mudroom-view-one"
+        },
+        {
+          "yaw": 1.9701881316837309,
+          "pitch": 0.9316072420683099,
+          "rotation": 0,
+          "target": "38-basement-stairs"
+        },
+        {
+          "yaw": 1.985556119295901,
+          "pitch": 0.5824851042738715,
+          "rotation": 0,
+          "target": "39-basement-bottom-of-stairs"
+        },
+        {
+          "yaw": -2.128630300214464,
+          "pitch": 0.6584448895680595,
+          "rotation": 0,
+          "target": "4-sitting-room"
+        },
+        {
+          "yaw": -2.2898512989375703,
+          "pitch": 0.30977472353215596,
+          "rotation": 0,
+          "target": "5-sun-room-view-one"
+        },
+        {
+          "yaw": -2.90537162166793,
+          "pitch": 0.23861446980829015,
+          "rotation": 0,
+          "target": "3-living-room-view-two"
         }
       ],
       "infoHotspots": []
@@ -2275,6 +2305,18 @@ var APP_DATA = {
           "pitch": 0.7549279143918461,
           "rotation": 0,
           "target": "39-basement-bottom-of-stairs"
+        },
+        {
+          "yaw": -3.068681030763088,
+          "pitch": 0.8777165980322241,
+          "rotation": 0,
+          "target": "7-kitchen-view-one"
+        },
+        {
+          "yaw": 2.603341417759676,
+          "pitch": 0.47988796310776927,
+          "rotation": 0,
+          "target": "4-sitting-room"
         }
       ],
       "infoHotspots": []
@@ -2319,6 +2361,12 @@ var APP_DATA = {
           "pitch": 0.3827964491979827,
           "rotation": 0,
           "target": "48-backyard-northwest"
+        },
+        {
+          "yaw": -3.0712926944525787,
+          "pitch": -0.29286397082133675,
+          "rotation": 0,
+          "target": "7-kitchen-view-one"
         }
       ],
       "infoHotspots": []
