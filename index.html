@@ -1,271 +1,97 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Project Title</title>
-<meta charset="utf-8">
-<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
-<style> @-ms-viewport { width: device-width; } </style>
-<link rel="stylesheet" href="vendor/reset.min.css">
-<link rel="stylesheet" href="style.css">
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+  <style>
+    @-ms-viewport {
+      width: device-width;
+    }
+  </style>
+  <link rel="stylesheet" href="vendor/reset.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/x-icon" sizes="16x16 32x32 48x48 64x64" href="/img/pano.svg">
 </head>
+
 <body class="multiple-scenes ">
 
-<div id="pano"></div>
+  <div id="pano"></div>
 
-<div id="sceneList">
-  <ul class="scenes">
-    
-      <a href="javascript:void(0)" class="scene" data-id="0-front-of-house">
-        <li class="text">Front of House</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="1-front-yard-south">
-        <li class="text">Front Yard (South)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="2-front-yard-southwest">
-        <li class="text">Front Yard (Southwest)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="3-backyard-north">
-        <li class="text">Backyard (North)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="4-backyard-northwest">
-        <li class="text">Backyard (Northwest)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="5-back-patio">
-        <li class="text">Back Patio</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="6-back-porch">
-        <li class="text">Back Porch</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="7-basement-bottom-of-stairs">
-        <li class="text">Basement (Bottom of Stairs)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="8-basement-northwest">
-        <li class="text">Basement (Northwest)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="9-basement-southwest">
-        <li class="text">Basement (Southwest)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="10-basement-south">
-        <li class="text">Basement (South)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="11-basement-north">
-        <li class="text">Basement (North)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="12-basement-stairs">
-        <li class="text">Basement Stairs</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="13-upstairs-landing">
-        <li class="text">Upstairs Landing</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="14-main-bedroom-view-one">
-        <li class="text">Main Bedroom (View One)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="15-main-bedroom-view-two">
-        <li class="text">Main Bedroom (View Two)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="16-main-bedroom-closet">
-        <li class="text">Main Bedroom Closet</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="17-main-bedroom-bathroom">
-        <li class="text">Main Bedroom Bathroom</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="18-main-bedroom-bathroom-closet">
-        <li class="text">Main Bedroom Bathroom Closet</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="19-upstairs-hallway">
-        <li class="text">Upstairs Hallway</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="20-upstairs-foyer">
-        <li class="text">Upstairs Foyer</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="21-bedroom-2-view-one">
-        <li class="text">Bedroom #2 (View One)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="22-bedroom-2-view-two">
-        <li class="text">Bedroom #2 (View Two)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="23-bedroom-3-view-one">
-        <li class="text">Bedroom #3 (View One)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="24-bedroom-3-view-two">
-        <li class="text">Bedroom #3 (View Two)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="25-upstairs-bathroom-view-one">
-        <li class="text">Upstairs Bathroom (View One)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="26-upstairs-bathroom-view-two">
-        <li class="text">Upstairs Bathroom (View Two)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="27-bedroom-4-view-one">
-        <li class="text">Bedroom #4 (View One)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="28-bedroom-4-view-two">
-        <li class="text">Bedroom #4 (View Two)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="29-upstairs-hallway-closet">
-        <li class="text">Upstairs Hallway Closet</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="30-front-door-foyer">
-        <li class="text">Front Door Foyer</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="31-coat-closet">
-        <li class="text">Coat Closet</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="32-living-room-view-one">
-        <li class="text">Living Room (View One)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="33-living-room-view-two">
-        <li class="text">Living Room (View Two)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="34-sitting-room">
-        <li class="text">Sitting Room</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="35-sun-room-view-one">
-        <li class="text">Sun Room (View One)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="36-sun-room-view-two">
-        <li class="text">Sun Room (View Two)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="37-kitchen-view-one">
-        <li class="text">Kitchen (View One)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="38-kitchen-view-two">
-        <li class="text">Kitchen (View Two)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="39-kitchen-pantry">
-        <li class="text">Kitchen Pantry</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="40-kitchen-view-three">
-        <li class="text">Kitchen (View Three)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="41-kitchen-view-four">
-        <li class="text">Kitchen (View Four)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="42-mudroom-view-one">
-        <li class="text">Mudroom (View One)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="43-mudroom-view-two">
-        <li class="text">Mudroom (View Two)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="44-garage">
-        <li class="text">Garage</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="45-main-floor-bathroom-view-one">
-        <li class="text">Main Floor Bathroom (View One)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="46-main-floor-bathroom-view-two">
-        <li class="text">Main Floor Bathroom (View Two)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="47-parlor-view-one">
-        <li class="text">Parlor (View One)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="48-parlor-view-two">
-        <li class="text">Parlor (View Two)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="49-stairway-landing-one">
-        <li class="text">Stairway Landing One</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="50-stairway-landing-two">
-        <li class="text">Stairway Landing Two</li>
-      </a>
-    
-  </ul>
-</div>
+  <div id="sceneList">
+    <ul class="scenes">
+    </ul>
+  </div>
 
-<div id="titleBar">
-  <h1 class="sceneName"></h1>
-</div>
+  <div id="titleBar">
+    <h1 class="sceneName"></h1>
+  </div>
 
-<a href="javascript:void(0)" id="autorotateToggle">
-  <img class="icon off" src="img/play.png">
-  <img class="icon on" src="img/pause.png">
-</a>
+  <a href="javascript:void(0)" id="autorotateToggle" style="display: none;">
+    <img class="icon off" src="img/play.png">
+    <img class="icon on" src="img/pause.png">
+  </a>
 
-<a href="javascript:void(0)" id="fullscreenToggle">
-  <img class="icon off" src="img/fullscreen.png">
-  <img class="icon on" src="img/windowed.png">
-</a>
+  <a href="javascript:void(0)" id="fullscreenToggle">
+    <img class="icon off" src="img/fullscreen.svg">
+    <img class="icon on" src="img/windowed.svg">
+  </a>
 
-<a href="javascript:void(0)" id="sceneListToggle">
-  <img class="icon off" src="img/expand.png">
-  <img class="icon on" src="img/collapse.png">
-</a>
+  <a href="javascript:void(0)" id="sceneListToggle">
+    <img class="icon off" src="img/menu.svg">
+    <img class="icon on" src="img/close.svg">
+  </a>
 
-<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
-  <img class="icon" src="img/up.png">
-</a>
-<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
-  <img class="icon" src="img/down.png">
-</a>
-<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
-  <img class="icon" src="img/left.png">
-</a>
-<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
-  <img class="icon" src="img/right.png">
-</a>
-<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
-  <img class="icon" src="img/plus.png">
-</a>
-<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
-  <img class="icon" src="img/minus.png">
-</a>
+  <a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+    <img class="icon" src="img/up.png">
+  </a>
+  <a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+    <img class="icon" src="img/down.png">
+  </a>
+  <a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+    <img class="icon" src="img/left.png">
+  </a>
+  <a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+    <img class="icon" src="img/right.png">
+  </a>
+  <a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+    <img class="icon" src="img/plus.png">
+  </a>
+  <a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+    <img class="icon" src="img/minus.png">
+  </a>
 
-<script src="vendor/screenfull.min.js" ></script>
-<script src="vendor/bowser.min.js" ></script>
-<script src="vendor/marzipano.js" ></script>
+  <script src="vendor/screenfull.min.js"></script>
+  <script src="vendor/bowser.min.js"></script>
+  <script src="vendor/marzipano.js"></script>
 
-<script src="data.js"></script>
-<script src="index.js"></script>
+  <script src="data.js"></script>
 
+  <script>
+    document.title = APP_DATA.name;
+
+    var el = document.querySelector('#sceneList ul');
+
+    APP_DATA.scenes.forEach(i => {
+      var a = document.createElement('a');
+      var li = document.createElement('li');
+
+      a.classList.add('scene');
+      a.setAttribute('data-id', i.id);
+      a.setAttribute('href', 'javascript:void(0)');
+
+      li.classList.add('text');
+      li.innerHTML = i.name;
+
+      a.appendChild(li);
+      el.appendChild(a);
+
+    });
+  </script>
+
+  <script src="index.js"></script>
 </body>
+
 </html>
